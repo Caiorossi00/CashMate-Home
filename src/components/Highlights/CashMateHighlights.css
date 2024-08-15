@@ -1,7 +1,6 @@
 .highlight {
   background-color: #121212;
   color: #ffffff;
-  padding: 40px;
   text-align: left;
   min-height: 100vh;
   border-bottom: 1px solid white;
@@ -9,6 +8,9 @@
 
 .highlight-content {
   margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: fit-content;
+  margin-left: 5vw;
 }
 
 .highlight-content h2 {
@@ -27,18 +29,17 @@
 }
 
 .highlight-image {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   margin-bottom: 20px;
-  margin-right: 1em;
+  margin-left: 1vw;
 }
 
 .container-image-highlight {
   display: flex;
-  gap: 2em;
-  margin-right: 20%;
-  align-items: center;
+  flex-direction: column;
+  width: 60vw;
 }
 
 .container-image-highlight h1 {

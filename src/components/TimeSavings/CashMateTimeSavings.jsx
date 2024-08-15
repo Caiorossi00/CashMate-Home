@@ -57,13 +57,25 @@ function CashMateTimeSavings() {
   }, [dias]);
 
   return (
-    <section className="time-savings">
+    <section className="time-savings" id="tempo-economizado">
       <h2 data-aos="fade-left">
         <span>Tempo</span> Economizado
       </h2>
+      <p className="benefits-message" data-aos="fade-left">
+        <strong>
+          Por que gastar tempo com cálculos manuais e conferências
+          intermináveis?
+        </strong>
+        CashMate automatiza o processo com <span>precisão</span>, garantindo que
+        você sempre tenha o troco certo sem esforço adicional. Reduza o{" "}
+        <span>tempo</span> gasto na contagem de dinheiro e <span>minimize</span>{" "}
+        o risco de erros, mantendo seu caixa organizado e sua operação mais{" "}
+        <span>eficiente</span>. <br></br>Com CashMate, você faz mais em menos
+        tempo.
+      </p>
       <p className="intro-message" data-aos="fade-left">
-        10 minutos poupados por dia parecem pouco? Veja quanto tempo você pode
-        ganhar na sua vida com o <span>CashMate</span>:
+        E se o CashMate te poupar 10 minutos por dia? Veja quanto tempo você
+        pode ganhar na sua vida com o <span>CashMate</span>:
       </p>
       <label htmlFor="dias" data-aos="fade-left">
         Dias Trabalhados:
@@ -76,7 +88,6 @@ function CashMateTimeSavings() {
         onChange={(e) => setDias(parseInt(e.target.value) || 0)}
         data-aos="fade-left"
       />
-
       <div className="results" data-aos="fade-left">
         <div className="result">
           <CountUp className="value" end={tempoEconomizado.dias} duration={1} />
@@ -99,7 +110,6 @@ function CashMateTimeSavings() {
           <span className="unit">Minutos</span>
         </div>
       </div>
-
       {mensagem && (
         <p className="message" data-aos="fade-left">
           {mensagem}

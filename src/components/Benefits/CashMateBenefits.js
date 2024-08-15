@@ -12,7 +12,7 @@ const CashMateBenefits = () => {
   }, []);
 
   return (
-    <div className="container-instructions">
+    <div className="container-instructions" id="detalhes">
       <div className="instructions-items">
         <div className="container-explore" data-aos="fade-up">
           <h1>Tempo é dinheiro. E que tal ter os dois?</h1>

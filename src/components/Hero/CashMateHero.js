@@ -12,13 +12,18 @@ function CashMateHero() {
   }, []);
 
   return (
-    <header>
+    <header id="home">
       <nav data-aos="fade-right">
         <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
+          <li>
+            <a href="#sobre">Saiba Mais</a>
+          </li>
+          <li>
+            <a href="#tempo-economizado">Economize Tempo</a>
+          </li>
+          <li>
+            <a href="#detalhes">Explore os Detalhes</a>
+          </li>
         </ul>
       </nav>
       <main>
