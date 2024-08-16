@@ -76,8 +76,8 @@ function CashMateTimeSavings() {
         tempo.
       </p>
       <p className="intro-message" data-aos="fade-left">
-        E se o CashMate te poupar 10 minutos por dia? Veja quanto tempo você
-        pode ganhar na sua vida com o <span>CashMate</span>:
+        E se o <span>CashMate</span> te poupar 10 minutos por dia? Veja quanto
+        tempo você pode ganhar na sua vida:
       </p>
       <label htmlFor="dias" data-aos="fade-left">
         Dias Trabalhados:
