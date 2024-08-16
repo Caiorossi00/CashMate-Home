@@ -20,6 +20,32 @@ function CashMateFooter() {
             <a href="#detalhes">Detalhes</a>
           </li>
         </ul>
+        <ul className="footer-links">
+          <li className="footer-title">Contato</li>
+          <li>
+            <a
+              href="https://www.instagram.com/caiorossi.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Caiorossi00"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="mailto:Caiorossi.code@gmail.com">
+              Caiorossi.code@gmail.com
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div className="footer-bottom">

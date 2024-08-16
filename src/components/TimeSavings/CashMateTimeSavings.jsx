@@ -13,20 +13,6 @@ function CashMateTimeSavings() {
   });
   const [mensagem, setMensagem] = useState("");
 
-  const mensagensPorHora = {
-    1: "Em uma hora, você pode ter uma conversa profunda com alguém que ama, fortalecer laços e criar memórias preciosas.",
-    2: "Duas horas são tempo suficiente para se perder em um bom livro, expandir sua mente e viajar para outros mundos sem sair do lugar.",
-    3: "Em três horas, você pode se dedicar a um hobby que te apaixona, nutrir sua criatividade e encontrar alegria nas pequenas coisas.",
-    4: "Quatro horas permitem que você se desconecte do mundo digital e reconecte-se com a natureza, recarregando suas energias e encontrando paz interior.",
-    5: "Cinco horas são tempo suficiente para preparar um jantar especial para quem você ama, celebrar a vida e fortalecer os laços afetivos.",
-    6: "Em seis horas, você pode se dedicar a um projeto pessoal, realizar um sonho antigo e sentir a satisfação de criar algo com suas próprias mãos.",
-    7: "Sete horas permitem que você mergulhe em um novo conhecimento, expandir seus horizontes e descobrir novas paixões.",
-    8: "Em oito horas, você pode se voluntariar em uma causa que acredita, fazer a diferença na vida de outras pessoas e sentir a gratidão em seu coração.",
-    9: "Nove horas são tempo suficiente para organizar suas finanças, planejar seu futuro e construir uma vida mais estável e segura.",
-    10: "Em dez horas, você pode se dedicar ao autocuidado, cuidar do seu corpo e mente, e renovar suas energias para enfrentar os desafios da vida.",
-    24: "Um dia inteiro é uma oportunidade para viver novas experiências, criar memórias inesquecíveis e construir um legado que inspire outros.",
-  };
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,6 +21,20 @@ function CashMateTimeSavings() {
   }, []);
 
   useEffect(() => {
+    const mensagensPorHora = {
+      1: "Em uma hora, você pode ter uma conversa profunda com alguém que ama, fortalecer laços e criar memórias preciosas.",
+      2: "Duas horas são tempo suficiente para se perder em um bom livro, expandir sua mente e viajar para outros mundos sem sair do lugar.",
+      3: "Em três horas, você pode se dedicar a um hobby que te apaixona, nutrir sua criatividade e encontrar alegria nas pequenas coisas.",
+      4: "Quatro horas permitem que você se desconecte do mundo digital e reconecte-se com a natureza, recarregando suas energias e encontrando paz interior.",
+      5: "Cinco horas são tempo suficiente para preparar um jantar especial para quem você ama, celebrar a vida e fortalecer os laços afetivos.",
+      6: "Em seis horas, você pode se dedicar a um projeto pessoal, realizar um sonho antigo e sentir a satisfação de criar algo com suas próprias mãos.",
+      7: "Sete horas permitem que você mergulhe em um novo conhecimento, expandir seus horizontes e descobrir novas paixões.",
+      8: "Em oito horas, você pode se voluntariar em uma causa que acredita, fazer a diferença na vida de outras pessoas e sentir a gratidão em seu coração.",
+      9: "Nove horas são tempo suficiente para organizar suas finanças, planejar seu futuro e construir uma vida mais estável e segura.",
+      10: "Em dez horas, você pode se dedicar ao autocuidado, cuidar do seu corpo e mente, e renovar suas energias para enfrentar os desafios da vida.",
+      24: "Um dia inteiro é uma oportunidade para viver novas experiências, criar memórias inesquecíveis e construir um legado que inspire outros.",
+    };
+
     const totalMinutos = dias * 10;
     setTempoEconomizado({
       dias: Math.floor(totalMinutos / 1440),
@@ -66,6 +66,8 @@ function CashMateTimeSavings() {
           Por que gastar tempo com cálculos manuais e conferências
           intermináveis?
         </strong>
+        <br></br>
+        <br></br>
         CashMate automatiza o processo com <span>precisão</span>, garantindo que
         você sempre tenha o troco certo sem esforço adicional. Reduza o{" "}
         <span>tempo</span> gasto na contagem de dinheiro e <span>minimize</span>{" "}

@@ -67,3 +67,10 @@
   color: #333;
   margin: 0 10%;
 }
+
+@media (max-width: 768px) {
+  .benefits-message {
+    font-size: 20px;
+    margin: 0 5%;
+  }
+}
