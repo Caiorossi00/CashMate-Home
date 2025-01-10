@@ -36,6 +36,9 @@ function CashMateHero() {
             <li>
               <a href="#detalhes">Explore os Detalhes</a>
             </li>
+            <li>
+              <button id="nav-button">Experimente</button>
+            </li>
           </div>
         </ul>
       </nav>
