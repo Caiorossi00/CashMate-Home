@@ -19,11 +19,27 @@ function CashMateHighlight() {
       </div>
 
       <div id="images-sobre">
-        <img src="https://via.placeholder.com/300" alt="Imagem principal" />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1676485163992-4cc18ef56c9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Imagem principal"
+          className="image1-sobre"
+        />
         <div id="bottom-images-sobre">
-          <img src="https://via.placeholder.com/150" alt="Imagem inferior 1" />
-          <img src="https://via.placeholder.com/150" alt="Imagem inferior 2" />
-          <img src="https://via.placeholder.com/150" alt="Imagem inferior 3" />
+          <img
+            src="https://images.unsplash.com/photo-1620483763435-aa0b760982df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imagem inferior 1"
+            className="bottom-pic-sobre"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imagem inferior 2"
+            className="bottom-pic-sobre"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1609848436094-0450727a1023?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Imagem inferior 3"
+            className="bottom-pic-sobre"
+          />
         </div>
       </div>
 
