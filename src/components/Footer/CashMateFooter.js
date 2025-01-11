@@ -19,6 +19,12 @@ function CashMateFooter() {
           <li>
             <a href="#detalhes">Detalhes</a>
           </li>
+          <li>
+            <a href="#pricing">Preços</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
         </ul>
         <ul className="footer-links">
           <li className="footer-title">Contato</li>
@@ -33,17 +39,15 @@ function CashMateFooter() {
           </li>
           <li>
             <a
-              href="https://github.com/Caiorossi00"
+              href="https://wa.me/553984158694"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              WhatsApp
             </a>
           </li>
           <li>
-            <a href="mailto:Caiorossi.code@gmail.com">
-              Caiorossi.code@gmail.com
-            </a>
+            <a href="mailto:Caiorossi.code@gmail.com">Email </a>
           </li>
         </ul>
       </div>
@@ -59,7 +63,7 @@ function CashMateFooter() {
             @Caiorossi.dev
           </a>
         </p>
-        <p>CashMate © 2024</p>
+        <p>CashMate © 2025</p>
       </div>
     </footer>
   );

@@ -4,6 +4,7 @@ import CashMateHero from "./components/Hero/CashMateHero";
 import CashMateHighlights from "./components/Highlights/CashmateHighlights";
 import CashMatePricing from "./components/Pricing/Pricing";
 import CashMateFooter from "./components/Footer/CashMateFooter";
+import CashmateFaq from "./components/FAQ/Faq";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <CashMateHero />
       <CashMateHighlights />
       <CashMateTimeSavings />
-      <CashMateBenefits />
       <CashMatePricing />
+      <CashMateBenefits />
+      <CashmateFaq />
       <CashMateFooter />
     </div>
   );
