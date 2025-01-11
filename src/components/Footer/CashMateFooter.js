@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 import "./CashMateFooter.css";
 
 function CashMateFooter() {
@@ -53,6 +54,7 @@ function CashMateFooter() {
       </div>
 
       <div className="footer-bottom">
+        <img src={logo} alt="Logo" className="footer-logo" />
         <p>
           Desenvolvido por{" "}
           <a
