@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-import "./CashMateHighlights.css";
 import AOS from "aos";
+import cashmateUI from "../../assets/cashmate-ui.png";
+import retirada from "../../assets/retirada.png";
+import "./CashMateHighlights.css";
 import "aos/dist/aos.css";
 
 function CashMateHighlight() {
@@ -12,18 +14,14 @@ function CashMateHighlight() {
   }, []);
 
   return (
-    <div id="container-sobre">
+    <div id="sobre">
       <div id="first-text-sobre">
         <p>Lorem Ipsum</p>
         <h1>CashMate</h1>
       </div>
 
       <div id="images-sobre">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1676485163992-4cc18ef56c9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Imagem principal"
-          className="image1-sobre"
-        />
+        <img src={cashmateUI} alt="Imagem principal" className="image1-sobre" />
         <div id="bottom-images-sobre">
           <img
             src="https://images.unsplash.com/photo-1620483763435-aa0b760982df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -31,7 +29,7 @@ function CashMateHighlight() {
             className="bottom-pic-sobre"
           />
           <img
-            src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={retirada}
             alt="Imagem inferior 2"
             className="bottom-pic-sobre"
           />
