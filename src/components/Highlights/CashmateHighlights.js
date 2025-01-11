@@ -20,13 +20,8 @@ function CashMateHighlight() {
         <h1>CashMate</h1>
       </div>
 
-      <div id="images-sobre" data-aos="fade-up">
-        <img
-          src={cashmateUI}
-          alt="Imagem principal"
-          className="image1-sobre"
-          data-aos="zoom-in"
-        />
+      <div id="images-sobre">
+        <img src={cashmateUI} alt="Imagem principal" className="image1-sobre" />
         <div id="bottom-images-sobre" data-aos="fade-up">
           <div className="side-icons" data-aos="fade-right">
             <i className="fa-solid fa-money-bill-1-wave"></i>

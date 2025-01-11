@@ -1,76 +1,112 @@
 .time-savings {
-  padding: 40px;
-  text-align: center;
-  border-bottom: 1px solid white;
+  background-color: #94e148;
+  padding: 5% 10%;
+  color: white;
+  margin-top: 10vh;
+}
+
+#first-text-savings h1 {
+  font-size: 32px;
+}
+
+#first-text-savings p {
+  margin: 0;
+  color: grey;
 }
 
 .time-savings h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
   color: white;
+  margin: 0;
 }
 
-.time-savings label {
-  display: block;
-  margin-bottom: 10px;
+.intro-message {
+  font-size: 1.5em;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
 }
 
-.time-savings p {
-  color: white;
+.intro-message > span {
+  color: grey;
 }
 
-.time-savings span {
-  color: #94e148;
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
-.time-savings input[type="number"] {
-  width: 100px;
-  padding: 10px;
-  border: 1px solid #94e148;
+
+.time-button,
+.reset-button {
+  border: none;
+  padding: 12px 25px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
   border-radius: 5px;
-  background-color: #333;
-  color: #94e148;
+  color: grey;
+  font-family: inherit;
+}
+
+.time-button:hover {
+  background-color: #000000;
+  color: white;
 }
 
 .results {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 3vh;
 }
 
 .result {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vh;
 }
 
 .value {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
 }
 
 .unit {
-  font-size: 1.2em;
+  font-size: 1em;
   color: white;
 }
 
-.intro-message {
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin: 0 10%;
-  margin-top: 2em;
-  margin-bottom: 3em;
+.reset-button-container {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 1em;
 }
 
-.benefits-message {
-  font-size: 25px;
-  color: #333;
-  margin: 0 10%;
+.reset-button {
+  width: 20vw;
+  background-color: black;
+  color: rgb(172, 172, 172);
+}
+
+.reset-button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.days-worked-container {
+  margin-top: 2vh;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.days-worked-container p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-  .benefits-message {
-    font-size: 20px;
-    margin: 0 5%;
-  }
 }

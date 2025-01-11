@@ -1,7 +1,7 @@
 #sobre {
   background-color: rgb(0, 0, 0);
-  color: greenyellow;
-  min-height: 100vh;
+  color: rgba(148, 225, 72, 0.9);
+  min-height: 70vh;
   padding: 5% 10%;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .bottom-pic-sobre {
-  height: 50vh;
+  height: 45vh;
   width: 35%;
   object-fit: contain;
   padding: 0 1em;
@@ -71,7 +71,7 @@
 
 .side-icons {
   width: 35%;
-  height: 50vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +105,7 @@
 }
 
 .tooltip h1 {
-  color: #00ff00;
+  color: rgba(148, 225, 72, 0.9);
   font-size: small;
   text-align: left;
   margin: 0;

@@ -6,12 +6,12 @@ import "aos/dist/aos.css";
 
 function CashMateTimeSavings() {
   const [dias, setDias] = useState(0);
+  const [diasTrabalhados, setDiasTrabalhados] = useState(0);
   const [tempoEconomizado, setTempoEconomizado] = useState({
     dias: 0,
     horas: 0,
     minutos: 0,
   });
-  const [mensagem, setMensagem] = useState("");
 
   useEffect(() => {
     AOS.init({
@@ -21,75 +21,36 @@ function CashMateTimeSavings() {
   }, []);
 
   useEffect(() => {
-    const mensagensPorHora = {
-      1: "Em uma hora, você pode ter uma conversa profunda com alguém que ama, fortalecer laços e criar memórias preciosas.",
-      2: "Duas horas são tempo suficiente para se perder em um bom livro, expandir sua mente e viajar para outros mundos sem sair do lugar.",
-      3: "Em três horas, você pode se dedicar a um hobby que te apaixona, nutrir sua criatividade e encontrar alegria nas pequenas coisas.",
-      4: "Quatro horas permitem que você se desconecte do mundo digital e reconecte-se com a natureza, recarregando suas energias e encontrando paz interior.",
-      5: "Cinco horas são tempo suficiente para preparar um jantar especial para quem você ama, celebrar a vida e fortalecer os laços afetivos.",
-      6: "Em seis horas, você pode se dedicar a um projeto pessoal, realizar um sonho antigo e sentir a satisfação de criar algo com suas próprias mãos.",
-      7: "Sete horas permitem que você mergulhe em um novo conhecimento, expandir seus horizontes e descobrir novas paixões.",
-      8: "Em oito horas, você pode se voluntariar em uma causa que acredita, fazer a diferença na vida de outras pessoas e sentir a gratidão em seu coração.",
-      9: "Nove horas são tempo suficiente para organizar suas finanças, planejar seu futuro e construir uma vida mais estável e segura.",
-      10: "Em dez horas, você pode se dedicar ao autocuidado, cuidar do seu corpo e mente, e renovar suas energias para enfrentar os desafios da vida.",
-      24: "Um dia inteiro é uma oportunidade para viver novas experiências, criar memórias inesquecíveis e construir um legado que inspire outros.",
-    };
-
-    const totalMinutos = dias * 10;
+    const totalMinutos = dias * 15;
     setTempoEconomizado({
       dias: Math.floor(totalMinutos / 1440),
       horas: Math.floor((totalMinutos % 1440) / 60),
       minutos: totalMinutos % 60,
     });
-
-    let novaMensagem = "";
-    if (totalMinutos >= 10 && totalMinutos < 60) {
-      novaMensagem =
-        "Sabe o que você pode fazer em 10 minutos? Tomar um café e relaxar!";
-    } else if (totalMinutos >= 60) {
-      const horasEconomizadas = Math.floor(totalMinutos / 60);
-      novaMensagem =
-        mensagensPorHora[horasEconomizadas] ||
-        "Imagine o que você pode fazer com todo esse tempo livre!";
-    }
-
-    setMensagem(novaMensagem);
   }, [dias]);
+
+  const handleButtonClick = (valor) => {
+    setDias((prevDias) => prevDias + valor);
+    setDiasTrabalhados((prevDiasTrabalhados) => prevDiasTrabalhados + valor);
+  };
+
+  const handleReset = () => {
+    setDias(0);
+    setDiasTrabalhados(0);
+  };
 
   return (
     <section className="time-savings" id="tempo-economizado">
-      <h2 data-aos="fade-left">
-        <span>Tempo</span> Economizado
-      </h2>
-      <p className="benefits-message" data-aos="fade-left">
-        <strong>
-          Por que gastar tempo com cálculos manuais e conferências
-          intermináveis?
-        </strong>
-        <br></br>
-        <br></br>
-        CashMate automatiza o processo com <span>precisão</span>, garantindo que
-        você sempre tenha o troco certo sem esforço adicional. Reduza o{" "}
-        <span>tempo</span> gasto na contagem de dinheiro e <span>minimize</span>{" "}
-        o risco de erros, mantendo seu caixa organizado e sua operação mais{" "}
-        <span>eficiente</span>. <br></br>Com CashMate, você faz mais em menos
-        tempo.
-      </p>
+      <div id="first-text-savings" data-aos="fade-up">
+        <p>Lorem Ipsum</p>
+        <h1>Tempo</h1>
+      </div>
+
       <p className="intro-message" data-aos="fade-left">
-        E se o <span>CashMate</span> te poupar 10 minutos por dia? Veja quanto
-        tempo você pode ganhar na sua vida:
+        E se o <span>CashMate</span> te poupar 15 minutos por dia{" "}
+        <span>agilizando</span> o fechamento do caixa?
       </p>
-      <label htmlFor="dias" data-aos="fade-left">
-        Dias Trabalhados:
-      </label>
-      <input
-        type="number"
-        id="dias"
-        min="0"
-        value={dias}
-        onChange={(e) => setDias(parseInt(e.target.value) || 0)}
-        data-aos="fade-left"
-      />
+
       <div className="results" data-aos="fade-left">
         <div className="result">
           <CountUp className="value" end={tempoEconomizado.dias} duration={1} />
@@ -99,7 +60,7 @@ function CashMateTimeSavings() {
           <CountUp
             className="value"
             end={tempoEconomizado.horas}
-            duration={1}
+            duration={3}
           />
           <span className="unit">Horas</span>
         </div>
@@ -107,16 +68,41 @@ function CashMateTimeSavings() {
           <CountUp
             className="value"
             end={tempoEconomizado.minutos}
-            duration={1}
+            duration={3}
           />
-          <span className="unit">Minutos</span>
+          <span className="unit">Min</span>
         </div>
       </div>
-      {mensagem && (
-        <p className="message" data-aos="fade-left">
-          {mensagem}
+
+      <div className="days-worked-container" data-aos="fade-right">
+        <p>
+          <strong>Dias Trabalhados:</strong> {diasTrabalhados}
         </p>
-      )}
+      </div>
+
+      <div className="button-group" data-aos="fade-left">
+        <button onClick={() => handleButtonClick(1)} className="time-button">
+          +1 dia
+        </button>
+        <button onClick={() => handleButtonClick(5)} className="time-button">
+          +5 dias
+        </button>
+        <button onClick={() => handleButtonClick(24)} className="time-button">
+          +24 dias
+        </button>
+        <button onClick={() => handleButtonClick(180)} className="time-button">
+          +6 meses
+        </button>
+        <button onClick={() => handleButtonClick(365)} className="time-button">
+          +1 ano
+        </button>
+      </div>
+
+      <div className="reset-button-container">
+        <button onClick={handleReset} className="reset-button">
+          Resetar
+        </button>
+      </div>
     </section>
   );
 }
