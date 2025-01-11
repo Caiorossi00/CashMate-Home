@@ -31,7 +31,7 @@
 }
 
 .image1-sobre {
-  height: 30vw;
+  height: 25vw;
 }
 
 #bottom-images-sobre {
@@ -45,6 +45,7 @@
   height: 50vh;
   width: 35%;
   object-fit: contain;
+  padding: 0 1em;
 }
 
 #infos-sobre {
@@ -66,4 +67,58 @@
 
 .item-sobre {
   width: 40%;
+}
+
+.side-icons {
+  width: 35%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  border: 1px solid grey;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.side-icons:hover {
+  background-color: #000;
+}
+
+.side-icons .tooltip {
+  position: absolute;
+  color: #fff;
+  font-size: 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.side-icons:hover .tooltip {
+  opacity: 1;
+  color: white;
+  font-size: 16px;
+  margin: 0 10%;
+  text-align: left;
+}
+
+.tooltip h1 {
+  color: #00ff00;
+  font-size: small;
+  text-align: left;
+  margin: 0;
+}
+
+.tooltip p {
+  margin: 0;
+}
+
+.side-icons i {
+  z-index: 1;
+}
+
+.side-icons:hover i {
+  display: none;
 }

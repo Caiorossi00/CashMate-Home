@@ -15,34 +15,61 @@ function CashMateHighlight() {
 
   return (
     <div id="sobre">
-      <div id="first-text-sobre">
+      <div id="first-text-sobre" data-aos="fade-up">
         <p>Lorem Ipsum</p>
         <h1>CashMate</h1>
       </div>
 
-      <div id="images-sobre">
-        <img src={cashmateUI} alt="Imagem principal" className="image1-sobre" />
-        <div id="bottom-images-sobre">
-          <img
-            src="https://images.unsplash.com/photo-1620483763435-aa0b760982df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imagem inferior 1"
-            className="bottom-pic-sobre"
-          />
+      <div id="images-sobre" data-aos="fade-up">
+        <img
+          src={cashmateUI}
+          alt="Imagem principal"
+          className="image1-sobre"
+          data-aos="zoom-in"
+        />
+        <div id="bottom-images-sobre" data-aos="fade-up">
+          <div className="side-icons" data-aos="fade-right">
+            <i className="fa-solid fa-money-bill-1-wave"></i>
+            <span className="tooltip">
+              <div>
+                <h1>Dinheiro</h1>
+                <p>
+                  CashMate ajuda você a economizar dinheiro ao evitar erros
+                  comuns no cálculo de troco e na contagem de caixa. Com
+                  processos automatizados e precisos, o app reduz desperdícios,
+                  otimiza o uso de notas e moedas e diminui a necessidade de
+                  reposições frequentes. Menos erros, mais economia para o seu
+                  negócio.
+                </p>
+              </div>
+            </span>
+          </div>
           <img
             src={retirada}
             alt="Imagem inferior 2"
             className="bottom-pic-sobre"
+            data-aos="zoom-in"
           />
-          <img
-            src="https://images.unsplash.com/photo-1609848436094-0450727a1023?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imagem inferior 3"
-            className="bottom-pic-sobre"
-          />
+          <div className="side-icons" data-aos="fade-left">
+            <i className="fa-regular fa-clock"></i>
+            <span className="tooltip">
+              <div>
+                <h1>Tempo</h1>
+                <p>
+                  CashMate economiza seu tempo ao automatizar a contagem de
+                  caixa no final do dia. Esqueça os cálculos manuais e as
+                  verificações exaustivas. Com apenas alguns cliques, você obtém
+                  um resumo preciso do caixa, reduzindo o esforço e agilizando o
+                  fechamento das suas operações.
+                </p>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
 
       <div id="infos-sobre">
-        <div className="item-sobre">
+        <div className="item-sobre" data-aos="fade-up">
           <h1>Overview</h1>
           <p>
             CashMate simplifica o gerenciamento financeiro no seu dia a dia. Com
@@ -52,7 +79,7 @@ function CashMateHighlight() {
             eficiência financeira em poucos cliques.
           </p>
         </div>
-        <div className="item-sobre">
+        <div className="item-sobre" data-aos="fade-up" data-aos-delay="200">
           <h1>Approach</h1>
           <p>
             Desenvolvemos um sistema prático e confiável, focado em resolver
