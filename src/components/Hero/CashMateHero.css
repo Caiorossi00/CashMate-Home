@@ -149,15 +149,6 @@ header a.botao:hover {
   margin-bottom: 5vh;
 }
 
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  position: relative;
-  z-index: 10;
-}
-
 .nav-links {
   display: flex;
   gap: 20px;
@@ -180,33 +171,42 @@ header a.botao:hover {
 }
 
 @media (max-width: 768px) {
-  .container-image-highlight {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .hamburger {
-    display: block;
+  header::before {
+    background-image: url("../../assets/background-m.png");
   }
 
   .nav-links {
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    margin-top: 2em;
+  }
+
+  #logo {
     display: none;
   }
 
-  .nav-links.show {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    font-size: 18px;
-    gap: 1em;
+  .nav-anchors {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1em;
   }
 
-  nav ul li {
-    text-align: center;
-    width: fit-content;
+  .nav-anchors button {
+    display: none;
   }
 
-  .scroll-div {
-    margin-top: 20vh;
+  .container-main {
+    margin-top: -5vh;
+  }
+
+  header a.botao {
+    width: 40%;
   }
 }

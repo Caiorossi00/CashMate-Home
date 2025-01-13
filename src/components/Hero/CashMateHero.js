@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./CashMateHero.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function CashMateHero() {
-  const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -13,17 +11,10 @@ function CashMateHero() {
     });
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <header id="home">
       <nav data-aos="fade-right">
-        <div className="hamburger" onClick={toggleMenu}>
-          &#9776;
-        </div>
-        <ul className={`nav-links ${isOpen ? "show" : ""}`}>
+        <ul className="nav-links">
           <div id="logo">
             <a href="https://instagram.com/caiorossi.dev">
               Developed by <span>@Caiorossi.dev</span>
