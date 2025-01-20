@@ -1,11 +1,12 @@
 #beneficios {
-  background-color: rgba(148, 225, 72, 0.9);
+  background-color: #94e148;
   min-height: 100vh;
   padding: 5% 10%;
 }
 
 #first-text-details p {
   color: grey;
+  margin: 0;
 }
 
 #first-text-details {
