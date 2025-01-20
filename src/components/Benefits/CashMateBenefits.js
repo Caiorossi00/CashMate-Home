@@ -12,7 +12,7 @@ const CashMateBenefits = () => {
   }, []);
 
   return (
-    <div className="container-instructions" id="detalhes">
+    <div className="container-instructions" id="beneficios">
       <div id="first-text-details" data-aos="fade-left">
         <p>Experiencie</p>
         <h1>Benefícios</h1>

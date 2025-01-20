@@ -18,7 +18,7 @@ function CashMateFooter() {
             <a href="#tempo-economizado">Tempo Economizado</a>
           </li>
           <li>
-            <a href="#detalhes">Detalhes</a>
+            <a href="#beneficios">Benefícios</a>
           </li>
           <li>
             <a href="#pricing">Preços</a>

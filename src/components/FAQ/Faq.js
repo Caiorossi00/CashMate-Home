@@ -3,27 +3,33 @@ import "./Faq.css";
 
 const CashmateFaq = () => {
   const [expanded, setExpanded] = useState(null);
-
   const faqs = [
     {
       question: "O que é o CashMate?",
       answer:
         "O CashMate é uma ferramenta para agilizar o fechamento de caixa e economizar tempo no seu dia a dia.",
     },
+
     {
-      question: "Como o CashMate ajuda a economizar tempo?",
+      question: "Como o CashMate calcula o valor exato da retirada?",
       answer:
-        "Ele ajuda a economizar 15 minutos por dia ao otimizar o processo de fechamento de caixa.",
+        "O CashMate aplica um algoritmo ganancioso, priorizando as cédulas de maior valor, começando da maior para a menor. O sistema calcula e distribui as cédulas de forma otimizada até que o valor definido seja completado.",
     },
     {
-      question: "Preciso de algum tipo de treinamento para usar o CashMate?",
+      question: "Qual é a lógica do algoritmo utilizado no CashMate?",
       answer:
-        "Não, o CashMate é intuitivo e fácil de usar, sem a necessidade de treinamento.",
+        "O algoritmo começa verificando as cédulas de maior valor disponível e tenta usar a maior quantidade possível de cada cédula, reduzindo progressivamente o valor do troco até que a quantidade total seja atingida. Ele busca a solução com o menor número de cédulas e moedas.",
     },
     {
-      question: "Posso personalizar o CashMate para minha empresa?",
+      question:
+        "Como o CashMate garante que sempre será feita a retirada do valor correto, mesmo com cédulas e moedas de diferentes valores?",
       answer:
-        "Sim, o CashMate permite personalizações para atender às necessidades específicas da sua empresa.",
+        "O algoritmo verifica todas as cédulas e moedas disponíveis no sistema e, com base no valor a ser trocado, distribui as cédulas de maneira a minimizar o número de unidades utilizadas. Ele garante que o valor do troco seja sempre o exato, utilizando as cédulas e moedas na ordem de maior para menor.",
+    },
+    {
+      question: "O CashMate permite configurar o estoque de cédulas e moedas?",
+      answer:
+        "Sim, o CashMate permite configurar o estoque de cédulas e moedas para o cálculo da retirada. O usuário pode ajustar os valores e quantidades disponíveis, garantindo que o algoritmo funcione com as condições reais de caixa.",
     },
   ];
 
