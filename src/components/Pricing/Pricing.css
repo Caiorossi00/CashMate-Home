@@ -9,7 +9,7 @@
   padding: 5% 10%;
 }
 
-p {
+#first-text-pricing p {
   margin: 0;
   color: grey;
 }
@@ -76,6 +76,7 @@ p {
 .item-price p {
   font-size: 0.9em;
   color: grey;
+  margin: 0;
 }
 
 .plan-details {

@@ -107,3 +107,7 @@
 .days-worked-container p {
   margin: 0;
 }
+
+.intro-message .span-intro {
+  color: rgb(255, 255, 255);
+}

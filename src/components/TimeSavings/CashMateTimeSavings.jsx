@@ -49,7 +49,7 @@ function CashMateTimeSavings() {
       <p className="intro-message" data-aos="fade-left">
         E se o <span>CashMate</span> te poupar 15 minutos por dia{" "}
         <span>agilizando</span> o fechamento do caixa? <br></br>
-        <span>Quanto tempo você ganhará?</span>
+        <span className="span-intro">Quanto tempo você ganhará?</span>
       </p>
 
       <div className="results" data-aos="fade-left">

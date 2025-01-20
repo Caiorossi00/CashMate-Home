@@ -28,9 +28,6 @@ function CashMateHero() {
               <a href="#tempo-economizado">Economize Tempo</a>
             </li>
             <li>
-              <a href="#detalhes">Benefícios</a>
-            </li>
-            <li>
               <button id="nav-button">
                 <a href="#pricing">Experimente</a>
               </button>
