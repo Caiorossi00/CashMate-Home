@@ -42,13 +42,14 @@ function CashMateTimeSavings() {
   return (
     <section className="time-savings" id="tempo-economizado">
       <div id="first-text-savings" data-aos="fade-up">
-        <p>Lorem Ipsum</p>
+        <p>Economize</p>
         <h1>Tempo</h1>
       </div>
 
       <p className="intro-message" data-aos="fade-left">
         E se o <span>CashMate</span> te poupar 15 minutos por dia{" "}
-        <span>agilizando</span> o fechamento do caixa?
+        <span>agilizando</span> o fechamento do caixa? <br></br>
+        <span>Quanto tempo você ganhará?</span>
       </p>
 
       <div className="results" data-aos="fade-left">

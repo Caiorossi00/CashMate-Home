@@ -14,7 +14,7 @@ const CashMateBenefits = () => {
   return (
     <div className="container-instructions" id="detalhes">
       <div id="first-text-details" data-aos="fade-left">
-        <p>Lorem Ipsum</p>
+        <p>Experiencie</p>
         <h1>Benefícios</h1>
       </div>
       <div className="instructions-items">

@@ -22,13 +22,18 @@ function CashMateHero() {
           </div>
           <div className="nav-anchors">
             <li>
+              <a href="#sobre">Conheça o App</a>
+            </li>
+            <li>
               <a href="#tempo-economizado">Economize Tempo</a>
             </li>
             <li>
-              <a href="#detalhes">Explore os Detalhes</a>
+              <a href="#detalhes">Benefícios</a>
             </li>
             <li>
-              <button id="nav-button">Experimente</button>
+              <button id="nav-button">
+                <a href="#pricing">Experimente</a>
+              </button>
             </li>
           </div>
         </ul>
@@ -41,9 +46,8 @@ function CashMateHero() {
 
         <div className="container-main">
           <a
-            href="https://caiorossi00.github.io/CashMate/"
+            href="#pricing"
             className="botao"
-            target="_blank"
             rel="noopener noreferrer"
             data-aos="fade-up"
           >

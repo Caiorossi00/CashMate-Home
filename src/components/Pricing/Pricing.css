@@ -2,23 +2,24 @@
   background-color: #121212;
   color: white;
   min-height: 20vh;
-  padding: 5% 10%;
   margin-bottom: 10vh;
 }
 
-#first-text-pricing p {
-  color: grey;
+#first-text-pricing {
+  padding: 5% 10%;
 }
 
 p {
   margin: 0;
+  color: grey;
 }
 
 .display-containers {
   display: flex;
-  margin-top: 5vh;
   gap: 1em;
   align-items: center;
+  margin: 0 4%;
+  margin-bottom: 10vh;
 }
 
 .container-card {
@@ -26,12 +27,13 @@ p {
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 40vh;
-  width: 22vw;
   padding: 3% 4%;
   border-radius: 12px;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 16px rgba(0, 0, 0, 0.1);
+  min-width: 22vw;
+  max-width: 22vw;
+  min-height: 40vh;
 }
 
 .container-card h3 {
@@ -54,12 +56,14 @@ p {
 
 .price-info {
   margin-bottom: 2vh;
+  width: fit-content;
 }
 
 .item-price {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  width: 100%;
 }
 
 .circle-price {
@@ -70,7 +74,7 @@ p {
 }
 
 .item-price p {
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: grey;
 }
 
@@ -88,6 +92,9 @@ p {
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 1vh;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .cta-price:hover {

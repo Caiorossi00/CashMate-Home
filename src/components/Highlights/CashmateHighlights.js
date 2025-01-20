@@ -16,7 +16,7 @@ function CashMateHighlight() {
   return (
     <div id="sobre">
       <div id="first-text-sobre" data-aos="fade-up">
-        <p>Lorem Ipsum</p>
+        <p>Conheça</p>
         <h1>CashMate</h1>
       </div>
 

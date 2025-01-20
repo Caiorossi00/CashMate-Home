@@ -90,6 +90,10 @@ nav a {
   font-family: inherit;
 }
 
+#nav-button a {
+  color: inherit;
+}
+
 header a.botao {
   display: inline-block;
   background-color: rgba(148, 225, 72, 0.9);
