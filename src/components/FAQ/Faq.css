@@ -41,3 +41,44 @@
   font-size: 1rem;
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 20px 10px;
+    margin-bottom: 10vh;
+  }
+
+  .faq-list {
+    margin: 0 10%;
+  }
+
+  .faq-title {
+    font-size: 1.6rem;
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-list {
+    margin: 0 5%;
+  }
+
+  .faq-title {
+    font-size: 1.4rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.85rem;
+  }
+}
