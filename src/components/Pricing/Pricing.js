@@ -42,7 +42,7 @@ const CashMatePricing = () => {
           </div>
 
           <a
-            href="https://wa.me/553984158694?text=Olá, gostaria de saber mais sobre o plano Basic do CashMate."
+            href="https://wa.me/53984158694?text=Olá, gostaria de saber mais sobre o plano Basic do CashMate."
             className="cta-price"
             target="_blank"
             rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const CashMatePricing = () => {
           </div>
 
           <a
-            href="https://wa.me/553984158694?text=Olá, gostaria de saber mais sobre o plano Plus do CashMate."
+            href="https://wa.me/53984158694?text=Olá, gostaria de saber mais sobre o plano Plus do CashMate."
             className="cta-price"
             target="_blank"
             rel="noopener noreferrer"
@@ -124,7 +124,7 @@ const CashMatePricing = () => {
           </div>
 
           <a
-            href="https://wa.me/553984158694?text=Olá, gostaria de saber mais sobre o plano Pro do CashMate."
+            href="https://wa.me/53984158694?text=Olá, gostaria de saber mais sobre o plano Pro do CashMate."
             className="cta-price"
             target="_blank"
             rel="noopener noreferrer"

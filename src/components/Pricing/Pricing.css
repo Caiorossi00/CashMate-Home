@@ -113,6 +113,10 @@
     max-width: 40%;
     min-height: auto;
   }
+
+  #pricing {
+    margin-bottom: 2vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -123,5 +127,10 @@
 
   #first-text-pricing {
     padding: 8% 5%;
+  }
+
+  .reset-button {
+    width: 120px;
+    color: white;
   }
 }
