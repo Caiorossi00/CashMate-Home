@@ -78,8 +78,6 @@
   .container-instructions {
     display: flex;
     align-items: center;
-    padding: 30px;
-    margin: 0 3%;
   }
 
   .step {

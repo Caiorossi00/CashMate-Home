@@ -102,3 +102,26 @@
   color: white;
   background-color: black;
 }
+
+@media (max-width: 1024px) {
+  .display-containers {
+    flex-wrap: wrap;
+  }
+
+  .container-card {
+    min-width: 40%;
+    max-width: 40%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-card {
+    min-width: 80%;
+    max-width: 80%;
+  }
+
+  #first-text-pricing {
+    padding: 8% 5%;
+  }
+}
