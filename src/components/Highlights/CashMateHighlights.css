@@ -1,124 +1,74 @@
-#sobre {
-  background-color: #121212;
-  color: rgba(148, 225, 72, 0.9);
-  min-height: 70vh;
-  padding: 5% 10%;
+@media screen and (max-width: 768px) {
+  #sobre {
+    padding: 10% 5%;
+  }
+
+  #first-text-sobre {
+    align-items: center;
+    text-align: center;
+  }
+
+  #images-sobre {
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .image1-sobre {
+    height: 40vw;
+    width: 100%;
+  }
+
+  #bottom-images-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-pic-sobre {
+    width: 80%;
+    height: auto;
+  }
+
+  .side-icons {
+    width: 80%;
+    height: 20vh;
+    font-size: 3em;
+    display: none;
+  }
+
+  #infos-sobre {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: small;
+  }
+
+  .item-sobre {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  .side-icons:hover .tooltip {
+    font-size: 14px;
+    margin: 0 5%;
+  }
 }
 
-#first-text-sobre {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2vh;
-}
+@media screen and (max-width: 480px) {
+  .side-icons {
+    height: 15vh;
+    font-size: 2.5em;
+  }
 
-#first-text-sobre p {
-  color: grey;
-  margin: 0;
-}
+  .side-icons:hover .tooltip {
+    font-size: 12px;
+  }
 
-#images-sobre {
-  display: flex;
-  flex-direction: column;
-  width: 80vw;
-  gap: 1em;
-}
+  .image1-sobre {
+    height: 50vw;
+  }
 
-#images-sobre > img,
-.bottom-pic-sobre {
-  object-fit: contain;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
-
-.image1-sobre {
-  height: 25vw;
-}
-
-#bottom-images-sobre {
-  display: flex;
-  margin-bottom: 7vh;
-  justify-content: space-between;
-  gap: 2em;
-}
-
-.bottom-pic-sobre {
-  height: 45vh;
-  width: 35%;
-  object-fit: contain;
-  padding: 0 1em;
-}
-
-#infos-sobre {
-  display: flex;
-  font-size: small;
-  margin: 0 auto;
-  justify-content: space-around;
-  text-align: justify;
-}
-
-#infos-sobre h1 {
-  color: grey;
-  font-size: 1.5em;
-}
-
-#infos-sobre p {
-  margin: 0;
-}
-
-.item-sobre {
-  width: 40%;
-}
-
-.side-icons {
-  width: 35%;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5em;
-  border: 1px solid grey;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.side-icons:hover {
-  background-color: #000;
-}
-
-.side-icons .tooltip {
-  position: absolute;
-  color: #fff;
-  font-size: 0.5em;
-  opacity: 0;
-  transition: opacity 0.3s ease, color 0.3s ease;
-}
-
-.side-icons:hover .tooltip {
-  opacity: 1;
-  color: white;
-  font-size: 16px;
-  margin: 0 10%;
-  text-align: left;
-}
-
-.tooltip h1 {
-  color: rgba(148, 225, 72, 0.9);
-  font-size: small;
-  text-align: left;
-  margin: 0;
-}
-
-.tooltip p {
-  margin: 0;
-}
-
-.side-icons i {
-  z-index: 1;
-}
-
-.side-icons:hover i {
-  display: none;
+  .bottom-pic-sobre {
+    width: 90%;
+  }
 }

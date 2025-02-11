@@ -29,7 +29,13 @@ function CashMateHero() {
             </li>
             <li>
               <button id="nav-button">
-                <a href="#pricing">Experimente</a>
+                <a
+                  href="https://caiorossi00.github.io/CashMate/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Experimente
+                </a>
               </button>
             </li>
           </div>
@@ -43,7 +49,8 @@ function CashMateHero() {
 
         <div className="container-main">
           <a
-            href="#pricing"
+            href="https://caiorossi00.github.io/CashMate/"
+            target="_blank"
             className="botao"
             rel="noopener noreferrer"
             data-aos="fade-up"
